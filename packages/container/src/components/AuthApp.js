@@ -19,7 +19,7 @@ export default ({ onSignIn }) => {
       onSignIn
     });
 
-    if (onParentNavigate) history.listen(onParentNavigate);
+    history.listen(onParentNavigate);
   }, []);
 
   return <div ref={ref} />;
